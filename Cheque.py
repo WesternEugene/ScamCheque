@@ -6,6 +6,5 @@ def generateNewBill(price:int):
 	new_bill = p2p.bill(amount=price, lifetime=20)
 	return new_bill.pay_url
 
-while True:
-	price = int(input('Введи стоимость товара\nВажно!! Стоимость товара должна быть округлённой до целого числа!!\n'))
-	print(generateNewBill(price=price))
+price = int(input('Введи стоимость товара\nВажно!! Стоимость товара должна быть округлённой до целого числа!!\n'))
+print(generateNewBill(price=price))
