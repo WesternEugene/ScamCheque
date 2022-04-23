@@ -14,6 +14,7 @@ then
 	pkg update
 	pkg upgrade
 	pkg install python3
+	pip3 install wheel
 	pip3 install pyqiwip2p
 	clear
 else
@@ -23,6 +24,7 @@ else
 		apk upgrade
 		apk add python3
 		apk add py3-pip
+		pip3 install wheel
 		pip3 install pyqiwip2p
 		clear
 	fi
